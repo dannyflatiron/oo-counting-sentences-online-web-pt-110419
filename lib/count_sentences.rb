@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     # how can I modify line 19 to pass the last test?
-    self.split(/[\s.?!]/).reject(&:empty?).count
+    self.split(/[\s.!?!]/).reject(&:empty?).count
     # if self.split(/[\s.?]/).reject(&:empty?).count == 3
     #   return 3
     # elsif self.split(/[\s.?]/).reject(&:empty?).count == 0
@@ -25,6 +25,5 @@ class String
     #   return 4
     #   # binding.pry
     # end
-
   end
 end
