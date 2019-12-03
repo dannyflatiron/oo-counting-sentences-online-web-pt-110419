@@ -16,6 +16,7 @@ class String
 
   def count_sentences
     # how can I modify line 19 to pass the last test?
+    #^answer.....I removed \s from (/[\s.!?]/) because \s is for whitespace characters
     self.split(/[.!?]/).reject(&:empty?).count
     # if self.split(/[\s.?]/).reject(&:empty?).count == 3
     #   return 3
